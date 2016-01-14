@@ -590,7 +590,7 @@ define('utils/TrackballControls',[],function(){
 			side = new THREE.Vector3(),
 			quaternion = new THREE.Quaternion(),
 
-			transmissibilityHold = 1 - Math.exp(_this.staticMoving ? -3 : (_this.dynamicDampingFactor * -40)),
+			transmissibilityHold = 1 - Math.exp(_this.staticMoving ? -3 : (_this.dynamicDampingFactor * -6)),
 			transmissibilityRelease = 1 - Math.exp(-_this.dynamicDampingFactor);
 
 		return function rotateCamera() {
